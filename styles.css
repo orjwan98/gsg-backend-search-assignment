@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;600&display=swap');
+
+:root {
+  --royal-blue: #45AAF2ff;
+  --argentinian-blue: #3867D6ff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+.main {
+  width: 90%;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.header {
+  margin: 100px 0px 40px;
+}
+
+.title {
+  font-size: 42px;
+  color: var(--royal-blue);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 26px;
+  text-align: center;
+}
+
+.search-input {
+  display: block;
+  height: 54px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.quotes-list {
+  padding: 0px;
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.quote-item {
+  background-color: #EDEDED;
+  border-left: 15px solid var(--royal-blue);
+  padding: 60px 60px 40px;
+  margin: 20px 0px;
+}
+
+.block-quote {
+  position: relative;
+}
+
+.block-quote::before{
+  content: "";
+  background-image: url("./quote.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -40px;
+  top: -40px;
+  height: 40px;
+  width: 40px;
+}
+
+.quote-block-span {
+  font-size: 20px;
+  color: var(--argentinian-blue);
+}
+
+.quote-block-footer {
+  color: var(--royal-blue);
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+.search-box {
+  display: block;
+  position: relative;
+}
+
+.search-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 54px;
+  width: 54px;
+  background-color: var(--royal-blue);
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 28px;
+  text-align: center;
+  padding: 20px;
+}
